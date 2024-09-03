@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-black px-28">
+<body class="bg-black px-4 sm:px-10 md:px-12 lg:px-28">
         <nav class="h-28 flex items-center justify-between bg-black">
             <h1 class="tracking-wider text-white text-3xl font-bold">AKIB</h1>
             <i class="fa-solid fa-bars text-white text-3xl lg:hidden max-lg:cursor-pointer" id="menubutton"></i>
@@ -27,44 +27,60 @@
                 </a>
             </div>
         </nav>
-        <div class="flex justify-between">
-            <div class="bg-[#121214] w-80 h-full rounded-2xl p-10 shadow-2xl">
-                <img src="download.png" alt="Profile" class="shadow-lg shadow-[#ED5D3A]">
+        <div class="flex justify-between max-lg:flex-wrap">
+            <div class="max-lg:flex-1 bg-[#121214] w-80 h-full rounded-2xl p-10 shadow-2xl">
+                <div class="max-lg:flex max-lg:justify-center">
+                    <img src="download.png" alt="Profile" class="shadow-lg shadow-[#ED5D3A]">
+                </div>
                 <h1 class="text-4xl text-white text-center mt-8 font-medium">Muhammad</h1>
                 <h1 class="text-4xl text-white text-center font-medium">Akib Anjum</h1>
                 <p class="text-[#9F9F9F] text-center text-base mt-2">I am a Web Developer from Bangladesh.</p>
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between max-lg:hidden">
                     <a href="https://www.facebook.com/akib.anjum.5">
                         <i class="fa-brands fa-facebook text-xl text-white border border-stone-800 p-3 rounded-xl mt-10 hover:text-[#ED5D3A] duration-300 ease-in"></i>
                     </a>
                     <span class="flex flex-col border border-stone-800 relative top-6 p-3 rounded-xl justify-between text-white">
                         <a href="https://x.com/AnjumAkib">
-                            <i class="fa-brands fa-x-twitter text-2xl hover:text-[#ED5D3A] duration-300 ease-in"></i>
+                            <i class="fa-brands fa-x-twitter text-2xl hover:text-[#ED5D3A] duration-300 ease-in text-white"></i>
                         </a>
                         <a href="https://github.com/Akib-dev1">
-                            <i class="fa-brands fa-github text-2xl mt-4 hover:text-[#ED5D3A] duration-300 ease-in"></i>
+                            <i class="fa-brands fa-github text-2xl mt-4 hover:text-[#ED5D3A] duration-300 ease-in text-white"></i>
                         </a>
                     </span>
                     <a href="#">
                         <i class="fa-brands fa-linkedin-in text-2xl border border-stone-800 p-3 rounded-xl relative top-5 text-white hover:text-[#ED5D3A] duration-300 ease-in"></i>
                     </a>
                 </div>
+                <div class="flex justify-center items-center lg:hidden space-x-8 mt-7">
+                    <a href="https://www.facebook.com/akib.anjum.5">
+                        <i class="fa-brands fa-facebook text-2xl text-white border border-stone-800 p-3 rounded-xl hover:text-[#ED5D3A] duration-300 ease-in"></i>
+                    </a>
+                    <a href="https://x.com/AnjumAkib">
+                        <i class="fa-brands fa-x-twitter text-2xl hover:text-[#ED5D3A] duration-300 ease-in border border-stone-800 p-3 rounded-xl text-white"></i>
+                    </a>
+                    <a href="https://github.com/Akib-dev1">
+                        <i class="fa-brands fa-github text-2xl hover:text-[#ED5D3A] duration-300 ease-in border border-stone-800 p-3 rounded-xl text-white"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in text-2xl border border-stone-800 p-3 rounded-xl text-white hover:text-[#ED5D3A] duration-300 ease-in"></i>
+                    </a>
+                </div>
             </div>
-            <div>
-                <div class="bg-[#121214] w-[49rem] h-content p-10 rounded-2xl">
+            <div class="max-lg:hidden">
+                <div class="bg-[#121214] lg:w-[49rem] h-fit p-8 lg:p-10 rounded-2xl  max-lg:mt-4 max-lg:flex-1">
                     <p class="text-[#9F9F9F]">Hello there,</p>
                     <p class="text-white text-4xl mt-5">I’m Akib Anjum, a web developer crafting user-centric websites with pixel-perfect precision.</p>
-                    <span class="flex mt-7 items-center space-x-5 mb-12">
+                    <div class="flex mt-7 items-center space-x-5 mb-12">
                         <i class="fa-solid fa-circle text-green-500 text-sm"></i>
                         <p class="text-[#9F9F9F]">Available for Freelancing</p>
-                    </span>
+                    </div>
                     <span class="text-white border border-stone-800 px-6 py-3.5 rounded-2xl bg-[#EB5D3A] hover:bg-inherit duration-300 ease-in cursor-pointer">
                         <a href="#">
                             Download CV <i class="fa-solid fa-download"></i>
                         </a>
                     </span>
                 </div>
-                <div class="bg-[#121214] w-[49rem] h-content mt-7 p-10 rounded-2xl">
+                <div class="bg-[#121214] lg:w-[49rem] h-content mt-7 p-10 rounded-2xl">
                     <p class="text-white text-xl">Company I Worked With</p>
                     <div class="overflow-hidden whitespace-nowrap">
                         <div class="flex items-center space-x-10">
@@ -85,6 +101,42 @@
                                 <i class="fa-brands fa-facebook text-7xl text-gray-500"></i>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#121214] lg:w-[49rem] h-fit p-8 lg:p-10 rounded-2xl  max-lg:mt-4 max-lg:flex-1 lg:hidden">
+            <p class="text-[#9F9F9F]">Hello there,</p>
+            <p class="text-white text-4xl mt-5">I’m Akib Anjum, a web developer crafting user-centric websites with pixel-perfect precision.</p>
+            <div class="flex mt-7 items-center space-x-5 mb-12">
+                <i class="fa-solid fa-circle text-green-500 text-sm"></i>
+                <p class="text-[#9F9F9F]">Available for Freelancing</p>
+            </div>
+            <span class="text-white border border-stone-800 px-6 py-3.5 rounded-2xl bg-[#EB5D3A] hover:bg-inherit duration-300 ease-in cursor-pointer">
+                <a href="#">
+                    Download CV <i class="fa-solid fa-download"></i>
+                </a>
+            </span>
+        </div>
+        <div class="bg-[#121214] lg:w-[49rem] h-content mt-7 p-10 rounded-2xl lg:hidden">
+            <p class="text-white text-xl">Company I Worked With</p>
+            <div class="overflow-hidden whitespace-nowrap">
+                <div class="flex items-center space-x-10">
+                    <div class="flex space-x-10 mt-6 logoslide">
+                        <i class="fa-brands fa-amazon text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-google text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-slack text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-linkedin text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-youtube text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-facebook text-7xl text-gray-500"></i>
+                    </div>
+                    <div class="flex space-x-10 mt-6 logoslide">
+                        <i class="fa-brands fa-amazon text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-google text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-slack text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-linkedin text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-youtube text-7xl text-gray-500"></i>
+                        <i class="fa-brands fa-facebook text-7xl text-gray-500"></i>
                     </div>
                 </div>
             </div>
@@ -124,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full h-fit rounded-2xl py-16 px-56 bg-[#121214] mt-8">
+        <div class="w-full h-fit rounded-2xl py-16 px-8 sm:px-12 md:px-20 lg:px-56 bg-[#121214] mt-8">
             <p class="text-white text-4xl text-center">Are You Ready to kickstart your project with a touch of magic?</p>
             <p class="text-[#9F9F9F] text-center mt-6">Reach out and let's make it happen ✨. I'm also available for full-time or Part-time</p>
             <p class="text-[#9F9F9F] text-center mt-1.5">opportunities to push the boundaries of design and deliver exceptional work.</p>
@@ -135,8 +187,8 @@
             </div>
         </div>
         <div class="bg-inherit flex justify-between py-16">
-            <p class="text-[#9F9F9F]">Copyright @2024, <a href="#" class="text-[#EB5D3A]">Akib</a> All Rights Reserved.</p>
-            <p class="text-[#9F9F9F]">Crafted with ❤️</p>
+            <p class="text-[#9F9F9F] max-sm:text-xs">Copyright @2024, <a href="#" class="text-[#EB5D3A]">Akib</a> All Rights Reserved.</p>
+            <p class="text-[#9F9F9F] max-sm:text-xs">Crafted with ❤️</p>
         </div>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
